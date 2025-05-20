@@ -12,9 +12,9 @@ class Coffee:
         if hasattr(self, '_name'):
             raise AttributeError("Coffee name cannot be changed")
         if not isinstance(value, str):
-            raise TypeError("Name must be a string")
+            raise TypeError("Name must bea string")
         if len(value) < 3:
-            raise ValueError("Coffee name must be ≥3 characters")
+            raise ValueError("Coffee name must be greater or equal to 3 characters")
         self._name = value
 
     def orders(self):
