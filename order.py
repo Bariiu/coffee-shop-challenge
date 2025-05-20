@@ -23,7 +23,7 @@ class Order:
         if not isinstance(value, float):
             raise TypeError("Price must be a float")
         if not (1.0 <= value <= 10.0):
-            raise ValueError("Price must be between 100 and 1000")
+            raise ValueError("Price must be between 1.0 and 10.0")
         self._price = value
     
     price = property(get_price, set_price)
